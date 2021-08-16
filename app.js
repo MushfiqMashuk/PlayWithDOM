@@ -27,3 +27,9 @@ const country = city.getElementsByTagName('li');
 for(let element of country){
     element.style.listStyle = 'none';
 }
+
+// Query selector
+console.log(document.querySelector('li:first-child')); 
+console.log(document.querySelector('li:nth-child(2)'));
+console.log(document.querySelector('ul#country > li:first-child'));
+console.log(document.querySelectorAll('.country')); // returns a NodeList (Array-like)
